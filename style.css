@@ -1,0 +1,60 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+.container {
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.box--solo {
+  background-color: #ff7677; /*item is child. either in child or parent in flex*/
+  flex-grow: 1;
+  margin-right: 6px;
+}
+
+.box--multiple {
+  flex-grow: 2; /*flex grow tells to fill in space, using whole numbers makes it a ratio*/
+}
+
+.box__single {
+  flex-grow: 1;
+} /* double underscore is child */
+
+.box__single--green {
+  background-color: #c2ff77;
+  padding: 16px 0;
+}
+
+.box__single--pink {
+  background-color: #ff9bf8;
+  margin: 6px 6px 0px 0;
+}
+
+.box__multi {
+  display: flex;
+}
+
+.box__multi--split {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.box__multi--split div {
+  background-color: #9baaff;
+  margin: 6px 0 0;
+  padding: 10px 0;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/*c2ff77*/
+/*ff9bf8 PINK */
+/* justify content uses x axis */
+/* css-tricks .com guide to flexbox */
